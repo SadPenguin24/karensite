@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+	<title>Reverse the String Input</title>
+</head>
+
+<script type="text/javascript" >
+	function rvrs(n)
+	{
+		n = n + "";
+		return n.split("").reverse().join("");
+	};
+	
+	function Answer()
+	{ 
+		let str = document.getElementById("String").value;
+		let ans = rvrs(str);
+		document.getElementById("Answer").innerHTML = ans;
+	};
+</script>
+<style>
+	html{
+		background-color: #eeeeee;
+		text-align: center;
+	}
+</style>
+<body>
+<h1><center>Reverse the string input</center></h1>
+	
+<fieldset>
+	<label for="Name">&emsp;To reverse a number/string:</label>
+	<input type="text" id="String" name="String"><br><br>
+	<label for="Answer1">The reversed value is:</label>
+	<p id = "Answer"></p><br><br>
+	<input type = "button"
+	value = "Check"
+	onClick = "javascript:Answer()">
+</fieldset>
+
+</body>
